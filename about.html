@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the story, vision and creativity behind ArtVista, a home for art lovers and creators.">
+  <title>About Us | ArtVista</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .about-hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #f5e8da, #fffaf4, #ead7c4);
+      background-size: 200% 200%;
+      animation: aboutGradient 10s ease infinite;
+    }
+
+    .about-hero span {
+      color: #a45c31;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .about-hero h1 {
+      font: 52px Georgia, serif;
+      color: #38291f;
+      margin: 20px 0;
+    }
+
+    .about-hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #76665a;
+      line-height: 1.9;
+    }
+
+    .about-content {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 0 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-content img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px #50352220;
+    }
+
+    .about-text span {
+      color: #a45c31;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .about-text h2 {
+      font: 38px Georgia, serif;
+      color: #38291f;
+      margin: 18px 0;
+    }
+
+    .about-text p {
+      color: #76665a;
+      line-height: 1.9;
+      margin-bottom: 15px;
+    }
+
+    .about-values {
+      background: #f7eee5;
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    .about-values h2 {
+      font: 38px Georgia, serif;
+      color: #38291f;
+      margin-bottom: 35px;
+    }
+
+    .values-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      padding: 30px 22px;
+      background: #fffaf4;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px #50352210;
+      transition: 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .value-card .value-icon {
+      font-size: 32px;
+    }
+
+    .value-card h3 {
+      color: #503522;
+      font: 23px Georgia, serif;
+      margin: 15px 0 10px;
+    }
+
+    .value-card p {
+      color: #817267;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .about-cta {
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .about-cta h2 {
+      font: 36px Georgia, serif;
+      color: #38291f;
+    }
+
+    .about-cta p {
+      color: #817267;
+      margin: 15px 0 25px;
+    }
+
+    .about-cta a {
+      display: inline-block;
+      padding: 13px 28px;
+      background: #8d5939;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .about-cta a:hover {
+      background: #603b27;
+      transform: translateY(-3px);
+    }
+
+    @keyframes aboutGradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @media(max-width: 700px) {
+      .about-hero h1 { font-size: 38px; }
+      .about-content { grid-template-columns: 1fr; }
+      .about-content img { height: 280px; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">ArtVista.</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="creator.html">Creators</a>
+<a href="login.html">Login</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="about-hero">
+      <span>OUR STORY</span>
+      <h1>Where Creativity Finds Its Home.</h1>
+      <p>
+        ArtVista is a creative space built to celebrate imagination,
+        artistic expression and the beauty of different perspectives.
+        We believe every artwork has a story worth discovering.
+      </p>
+    </section>
+
+    <section class="about-content">
+
+      <img
+        src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+        alt="Art displayed in a gallery"
+        loading="lazy"
+      >
+
+      <div class="about-text">
+        <span>WHO WE ARE</span>
+        <h2>A World Beyond Ordinary Art.</h2>
+
+        <p>
+          ArtVista is an online art gallery designed to bring
+          creativity closer to everyone. It offers a space where
+          visitors can explore different artistic styles and discover
+          inspiring visual creations.
+        </p>
+
+        <p>
+          From abstract compositions to modern and nature-inspired
+          artworks, our collection celebrates the many ways people
+          express ideas, feelings and imagination.
+        </p>
+
+        <p>
+          Our goal is to make art discovery simple, enjoyable
+          and accessible through a beautiful digital experience.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="about-values">
+
+      <h2>What Makes ArtVista Special?</h2>
+
+      <div class="values-grid">
+
+        <article class="value-card">
+          <div class="value-icon">🎨</div>
+          <h3>Creativity</h3>
+          <p>
+            We celebrate original ideas, artistic imagination
+            and creative expression.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon">✨</div>
+          <h3>Discovery</h3>
+          <p>
+            Explore different categories, styles and artworks
+            through one creative platform.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon">♡</div>
+          <h3>Inspiration</h3>
+          <p>
+            Save your favorite artworks and build a collection
+            of pieces that inspire you.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="about-cta">
+      <h2>Ready to Explore Art?</h2>
+      <p>Discover something beautiful and find your next inspiration.</p>
+      <a href="gallery.html">Explore Gallery →</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>ArtVista.</h2>
+      <p>Discover art. Feel creativity. Find inspiration.</p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ArtVista. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

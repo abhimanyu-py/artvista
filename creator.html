@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the creative minds behind ArtVista.">
+    <title>Our Creators | ArtVista</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .creator-hero {
+            text-align: center;
+            padding: 90px 20px 55px;
+            background: linear-gradient(135deg, #f8eee2, #fffaf3);
+        }
+        .creator-hero h1 {
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            color: #513a2d;
+            margin-bottom: 15px;
+        }
+        .creator-hero p {
+            color: #806c5d;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+        }
+        .creator-section {
+            padding: 65px 7%;
+        }
+        .creator-card {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            align-items: center;
+            background: #fffaf4;
+            padding: 25px;
+            border-radius: 22px;
+            box-shadow: 0 12px 35px #513a2d12;
+        }
+        .creator-card img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .creator-info h2 {
+            color: #513a2d;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .creator-info p {
+            color: #78695e;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        .creator-tag {
+            display: inline-block;
+            background: #eee0d0;
+            color: #634b3a;
+            padding: 9px 16px;
+            border-radius: 30px;
+            margin: 5px 5px 5px 0;
+        }
+        .creator-cta {
+            text-align: center;
+            padding: 55px 20px;
+            background: #f6eee5;
+        }
+        .creator-cta a {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 13px 27px;
+            background: #654b39;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        @media(max-width: 700px) {
+            .creator-card {
+                grid-template-columns: 1fr;
+            }
+            .creator-card img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">ArtVista<span>.</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="creator.html">Creators</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="creator-hero">
+        <h1>Meet Our Creators</h1>
+        <p>
+            Every artwork has a story, and every artist has a unique vision.
+            Discover the creativity and imagination behind ArtVista.
+        </p>
+    </section>
+
+    <section class="creator-section">
+        <article class="creator-card">
+            <img
+                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900"
+                alt="Creative art exhibition representing the ArtVista community">
+
+            <div class="creator-info">
+                <h2>The ArtVista Community</h2>
+                <p>
+                    ArtVista is a creative space built to celebrate artistic
+                    expression, imagination and visual storytelling.
+                </p>
+                <p>
+                    Our platform brings together different art styles,
+                    ideas and inspirations in one digital gallery.
+                </p>
+
+                <span class="creator-tag">Digital Art</span>
+                <span class="creator-tag">Abstract Art</span>
+                <span class="creator-tag">Modern Art</span>
+                <span class="creator-tag">Creativity</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="creator-cta">
+        <h2>Explore Creative Expressions</h2>
+        <p>Discover beautiful artworks in our online gallery.</p>
+        <a href="gallery.html">Explore Gallery</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 ArtVista. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

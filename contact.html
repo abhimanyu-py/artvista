@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Contact ArtVista for questions, feedback and creative collaborations.">
+
+  <title>Contact Us | ArtVista</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .contact-hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: linear-gradient(135deg, #f2dfce, #fffaf4, #ead4bf);
+      background-size: 200% 200%;
+      animation: contactGradient 9s ease infinite;
+    }
+
+    .contact-hero span {
+      color: #a45c31;
+      font-size: 12px;
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+
+    .contact-hero h1 {
+      font: 48px Georgia, serif;
+      color: #38291f;
+      margin: 18px 0;
+    }
+
+    .contact-hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #76665a;
+      line-height: 1.8;
+    }
+
+    .contact-container {
+      max-width: 1100px;
+      margin: 65px auto;
+      padding: 0 25px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 45px;
+    }
+
+    .contact-info {
+      padding: 35px;
+      border-radius: 18px;
+      background: #f5e9dd;
+    }
+
+    .contact-info h2 {
+      font: 30px Georgia, serif;
+      color: #38291f;
+      margin-bottom: 18px;
+    }
+
+    .contact-info p {
+      color: #76665a;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .contact-detail {
+      padding: 18px 0;
+      border-bottom: 1px solid #ddc9b7;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: #8d5939;
+      margin-bottom: 7px;
+    }
+
+    .contact-detail a {
+      color: #5c4636;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-form {
+      padding: 35px;
+      background: #fffaf4;
+      border: 1px solid #eee0d1;
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(70, 43, 25, 0.07);
+    }
+
+    .contact-form h2 {
+      font: 30px Georgia, serif;
+      color: #38291f;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 19px;
+    }
+
+    .form-group label {
+      display: block;
+      color: #654832;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 9px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #dfcdbb;
+      border-radius: 9px;
+      background: #fff;
+      color: #38291f;
+      font: inherit;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #a45c31;
+      box-shadow: 0 0 0 3px rgba(164, 92, 49, 0.12);
+    }
+
+    .form-group textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .contact-submit {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      background: #8d5939;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-submit:hover {
+      background: #603b27;
+      transform: translateY(-3px);
+    }
+
+    #formMessage {
+      display: none;
+      margin-top: 18px;
+      padding: 13px;
+      border-radius: 9px;
+      background: #e9f4e8;
+      color: #315d35;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    @keyframes contactGradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @media(max-width: 750px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+        margin: 35px auto;
+      }
+
+      .contact-hero h1 {
+        font-size: 37px;
+      }
+
+      .contact-form,
+      .contact-info {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">ArtVista.</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contact-hero">
+      <span>GET IN TOUCH</span>
+      <h1>Let's Start a Conversation.</h1>
+      <p>
+        Have a question, suggestion or creative idea?
+        We'd love to hear from you. Send us a message
+        and connect with the ArtVista community.
+      </p>
+    </section>
+
+    <section class="contact-container">
+
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+
+        <p>
+          Whether you are an art lover, creator or visitor,
+          your feedback helps us make ArtVista better.
+        </p>
+
+        <div class="contact-detail">
+          <strong>✉ Email</strong>
+          <a href="mailto:hello@artvista.com">
+            hello@artvista.com
+          </a>
+        </div>
+
+        <div class="contact-detail">
+          <strong>🎨 Our Platform</strong>
+          <a href="gallery.html">Explore ArtVista Gallery</a>
+        </div>
+
+        <div class="contact-detail">
+          <strong>♡ Our Purpose</strong>
+          <span>Discover art and celebrate creativity.</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+
+        <h2>Send Us a Message</h2>
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            minlength="2"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose a subject</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Artwork Feedback">Artwork Feedback</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Technical Support">Technical Support</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            minlength="10"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit">
+          Send Message →
+        </button>
+
+        <p id="formMessage" role="status" aria-live="polite"></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>ArtVista.</h2>
+      <p>Discover art. Feel creativity. Find inspiration.</p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ArtVista. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      formMessage.style.display = "block";
+      formMessage.textContent =
+        "Thank you! Your message passed the form validation.";
+
+      contactForm.reset();
+    });
+  </script>
+
+</body>
+</html>

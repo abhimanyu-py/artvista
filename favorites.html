@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="View your favorite artworks on ArtVista.">
+
+    <title>My Favorites | ArtVista</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/data.js" defer></script>
+    <script src="js/favorites.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Art<span>Vista.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="favorites.html" class="active">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="creator.html" class="creator-btn">Creator Studio ↗</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="creative-section gallery-hero">
+
+            <p class="section-label">YOUR PERSONAL COLLECTION</p>
+
+            <h2>
+                Your <span>Favorite</span> Artworks.
+            </h2>
+
+            <p>
+                All the artworks you love, collected in one place.
+            </p>
+
+        </section>
+
+
+        <section class="featured-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">SAVED COLLECTION</p>
+                    <h2>My Favorites</h2>
+                </div>
+
+                <p id="favoriteCount">0 Saved Artworks</p>
+
+            </div>
+
+
+            <div class="featured-grid" id="favoritesGrid">
+            </div>
+
+
+            <div id="emptyFavorites" hidden>
+
+                <h3>No Favorites Yet!</h3>
+
+                <p>
+                    Explore our gallery and save artworks you love.
+                </p>
+
+                <br>
+
+                <a href="gallery.html" class="primary-btn">
+                    Explore Gallery →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="index.html" class="logo">
+                    Art<span>Vista.</span>
+                </a>
+
+                <p>
+                    Where creativity meets imagination.
+                    Discover the beauty of art.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ArtVista. All Rights Reserved.</p>
+            <p>Designed with Creativity.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

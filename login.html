@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login or create your ArtVista account.">
+    <title>Login | ArtVista</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4e8dc, #fffaf5, #ead8c5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 22px 7%;
+        }
+
+        .logo {
+            color: #513a2d;
+            font-size: 27px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #b88a63;
+        }
+
+        .login-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 18px 60px;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 440px;
+            background: rgba(255,255,255,.88);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 15px 50px rgba(81,58,45,.13);
+            animation: appear .7s ease;
+        }
+
+        @keyframes appear {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-card h1 {
+            color: #513a2d;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #887568;
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f3e9df;
+            padding: 5px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+
+        .tabs button {
+            flex: 1;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            background: transparent;
+            color: #705744;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .tabs button.active {
+            background: #654b39;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #513a2d;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #e1d1c2;
+            border-radius: 10px;
+            outline: none;
+            background: #fffdfb;
+            font-size: 15px;
+        }
+
+        .form-group input:focus {
+            border-color: #987457;
+            box-shadow: 0 0 0 3px #98745720;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: #654b39;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 8px;
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: #846448;
+            transform: translateY(-2px);
+        }
+
+        .message {
+            margin-top: 18px;
+            text-align: center;
+            color: #48734d;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 24px;
+            color: #80634d;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #806f62;
+            font-size: 13px;
+        }
+
+        @media(max-width: 480px) {
+            .login-card {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">ArtVista<span>.</span></a>
+</header>
+
+<main class="login-wrapper">
+    <section class="login-card">
+        <h1 id="formTitle">Welcome Back</h1>
+        <p class="subtitle" id="formSubtitle">
+            Sign in to continue your creative journey.
+        </p>
+
+        <div class="tabs">
+            <button type="button" id="loginTab" class="active">Login</button>
+            <button type="button" id="signupTab">Sign Up</button>
+        </div>
+
+        <form id="accountForm">
+            <div class="form-group" id="nameGroup" hidden>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" minlength="2"
+                       placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       minlength="6" placeholder="Minimum 6 characters"
+                       required>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                Login
+            </button>
+
+            <p class="message" id="message" role="status"
+               aria-live="polite"></p>
+        </form>
+
+        <a href="index.html" class="back-link">
+            ← Back to ArtVista Home
+        </a>
+    </section>
+</main>
+
+<footer>
+    © 2026 ArtVista. All Rights Reserved.
+</footer>
+
+<script>
+    const loginTab = document.getElementById("loginTab");
+    const signupTab = document.getElementById("signupTab");
+    const nameGroup = document.getElementById("nameGroup");
+    const nameInput = document.getElementById("name");
+    const formTitle = document.getElementById("formTitle");
+    const formSubtitle = document.getElementById("formSubtitle");
+    const submitBtn = document.getElementById("submitBtn");
+    const accountForm = document.getElementById("accountForm");
+    const message = document.getElementById("message");
+
+    let currentMode = "login";
+
+    function setMode(mode) {
+        currentMode = mode;
+        const isSignup = mode === "signup";
+
+        nameGroup.hidden = !isSignup;
+        nameInput.required = isSignup;
+
+        loginTab.classList.toggle("active", !isSignup);
+        signupTab.classList.toggle("active", isSignup);
+
+        formTitle.textContent = isSignup ? "Create Account" : "Welcome Back";
+        formSubtitle.textContent = isSignup
+            ? "Join our creative community."
+            : "Sign in to continue your creative journey.";
+
+        submitBtn.textContent = isSignup ? "Create Account" : "Login";
+        message.textContent = "";
+    }
+
+    loginTab.addEventListener("click", () => setMode("login"));
+    signupTab.addEventListener("click", () => setMode("signup"));
+
+    accountForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        if (!accountForm.checkValidity()) {
+            accountForm.reportValidity();
+            return;
+        }
+
+        message.textContent = currentMode === "signup"
+            ? "Sign-up form validated successfully! Account creation needs a secure backend."
+            : "Login form validated successfully! Real authentication needs a secure backend.";
+
+        accountForm.reset();
+    });
+</script>
+
+</body>
+</html>
